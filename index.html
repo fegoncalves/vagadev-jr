@@ -40,45 +40,50 @@
 
 
 
-  <!-- Início main  -->
-  <main>
-
     <!-- Slider -->
-    <div id="carousel flex-container center">
-      <div class="slider">
-        <div class="slider-image item">
-          <img src="img/principal_banner_desktop.jpg" alt="Banner com imaagem do jogo Mortal Kombat">
-        </div>
-        <div class="slider-image item">
-          <img src="img/principal_banner_desktop_02.jpg" alt="Banner com imagem do jogo Red Dead Redemption II">
-        </div>
-      </div>
+    <div id="carousel" class="flex-container">
+      <div class="carousel-item">
+        <img src="img/principal_banner_desktop.jpg" alt="Banner com imaagem do jogo Mortal Kombat">
 
-      <div class="container-slider">
-        <div class="slider-content">
+        <div class="slider-content game-one">
           <h2>Mortal Kombat</h2>
           <h3>R$ 299<sup>,99</sup></h3>
           <p>Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.</p>
         </div>
       </div>
 
+      <div class="carousel-item">
+        <img src="img/principal_banner_desktop_02.jpg" alt="Banner com imagem do jogo Red Dead Redemption II">
+
+        <div class="slider-content game-two">
+          <h2>Red Dead Redemption II</h2>
+          <h3>R$ 299<sup>,99</sup></h3>
+          <p>Vencedor de mais de 175 prêmios de Jogo do Ano e avaliado com mais de 250 notas máximas, Red Dead
+            Redemption 2 é uma história épica de honra e lealdade no alvorecer dos tempos modernos.</p>
+        </div>
+      </div>
     </div>
-<script>
-  $("#carousel").slick({
-  prevArrow: `
-    <button type="button" class="slick-prev">
-      <span><-</span>
-      Anterior
-    </button>
-  `,
-  nextArrow: `
-    <button type="button" class="slick-next">
-      Próximo
-      <span>-></span>
-    </button>
-  `
-});
-</script>
+
+
+
+
+
+    <!-- Dois Mini Banners -->
+    <section class="mini-banner flex-container center">
+      <div class="container">
+        <figure>
+          <img src="img/sekiro_banner.jpg" alt="Imagem do jogo Sekiro Shadows The Twice">
+          <figcaption>SEKIRO - Shadows Die Twice</figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <figure>
+          <img src="img/zelda_banner.jpg" alt="Imagem do jogo The Legend of Zelda">
+          <figcaption>The Legend of Zelda - Breath of th wild</figcaption>
+        </figure>
+      </div>
+    </section>
 
 
   </main>

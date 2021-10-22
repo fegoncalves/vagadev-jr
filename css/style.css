@@ -52,10 +52,18 @@ p {
 .between {
 	justify-content: space-between;
 }
+.wrap {
+	flex-wrap: wrap;
+}
 .item {
   margin: 0;
   padding: 0;
 }
+.item-um {
+  margin: 0;
+  padding: 0;
+}
+
 
 
 /* =======================
@@ -90,7 +98,6 @@ nav {
 .btn-topo ul li {
   display: inline;
   margin: 0px 30px;
-  font-size: 18px;
   font-weight: 500;
 }
 
@@ -122,6 +129,10 @@ nav {
   max-width: 1920px;
 }
 
+#carousel .carousel-item {
+  position: relative;
+}
+
 .slider {
 	position: relative;
   z-index: 10;
@@ -137,15 +148,21 @@ nav {
   width: 1200px;
 }
 
-.slider-content{  
+.slider-content { 
   position: absolute;
   z-index: 30;
   top: 22%;
-  right: 26%;
   width: 414px;
   height: auto;
   color: #fff;
+}
+.game-one{ 
+  right: 26%;
   text-align: right;
+}
+.game-two {
+  left: 26%;
+  text-align: left;
 }
 
 .slider-content h3{
@@ -203,4 +220,34 @@ nav {
 
 .slick-prev {
   left: 10px;
+}
+
+
+
+/* =======================
+MINI BANNER SEKIRO E ZELDA
+ =======================  */
+.mini-banner {
+  max-width: 1920px;
+  height: 340px;
+}
+.mini-banner img {
+  width: 100%;
+  height: auto;
+}
+.mini-banner figure {
+  margin: 0;
+  padding: 0 10px;
+  position: relative;
+  z-index: 300;
+  top: -90px; 
+}
+.mini-banner figcaption {
+  background-color: var(--blue);
+  height: 61px;
+  color: black;
+  padding: 15px;
+  margin-top: -8px;
+  font-size: 20px;
+  font-weight: 500;
 }
