@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N1 RUSH - Avaliação Front-end JR</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+</head>
+
+
+<body>
+
+
+  <header class="flex-container between items-center">
+    <!-- Menu de navegação -->
+    <nav class="nav">
+      <div class="menu-topo flex-container center content-center">
+        <div class="menu-principal">
+          <img src="svgs/icon_hamburguer.svg" alt="Ícone hamburguer do menu">
+        </div>
+        <div class="logo">
+          <img src="img/Logo_N1_Rush.png" alt="Logo da Agência N1">
+        </div>
+      </div>
+    </nav>
+
+    <div class="btn-topo center">
+      <ul>
+        <li><a href="#"><img src="svgs/paper-plane.svg" alt="ícone de uma seta">Contato</li></a>
+        <li><a href="#"><img src="svgs/search-solid.svg" alt="ícone de uma lupa">Buscar</li></a>
+        <li><a href="#"><img src="svgs/shopping-bag-solid.svg" alt="ícone de sacola de compras"></li></a>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+  <!-- Início main  -->
+  <main>
+
+    <!-- Slider -->
+    <div id="carousel flex-container center">
+      <div class="slider">
+        <div class="slider-image item">
+          <img src="img/principal_banner_desktop.jpg" alt="Banner com imaagem do jogo Mortal Kombat">
+        </div>
+        <div class="slider-image item">
+          <img src="img/principal_banner_desktop_02.jpg" alt="Banner com imagem do jogo Red Dead Redemption II">
+        </div>
+      </div>
+
+      <div class="container-slider">
+        <div class="slider-content">
+          <h2>Mortal Kombat</h2>
+          <h3>R$ 299<sup>,99</sup></h3>
+          <p>Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.</p>
+        </div>
+      </div>
+
+    </div>
+<script>
+  $("#carousel").slick({
+  prevArrow: `
+    <button type="button" class="slick-prev">
+      <span><-</span>
+      Anterior
+    </button>
+  `,
+  nextArrow: `
+    <button type="button" class="slick-next">
+      Próximo
+      <span>-></span>
+    </button>
+  `
+});
+</script>
+
+
+  </main>
+
+
+
+
+
+
+  <!-- CDN do: JQuery e Slick JavaScript utilizado no slider -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- Script externo do slider -->
+  <script src="js/slider.js"></script>
+
+
+</body>
+
+</html>

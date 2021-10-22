@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+:root {
+  --darkblue: #084154;
+  --blue: #3EC6E0;
+  --silver: #EBEBEB;
+  --white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.55;
+  background-color: var(--white);
+  color: var(--darkblue);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+p { 
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+
+/* Flexbox */
+.flex-container {
+  margin: 0 auto;
+  display: flex;
+}  
+.center {
+  justify-content: center;
+}  
+.items-center {
+	align-items: center;
+}
+.content-center {  
+	align-content: center;
+}
+.around {
+	justify-content: space-around;
+}
+.between {
+	justify-content: space-between;
+}
+.item {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =======================
+   HEADER E NAV
+ ======================= */  
+header {
+  position: absolute;
+  z-index: 50;
+  top: 30px;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  width: 100%; 
+  margin: 0 auto;
+  color: #fff;
+}
+
+.logo {
+  width: 163px;
+  height: auto;
+  padding-left: 40px;
+}
+
+nav {
+  padding: 20px;
+}
+
+.btn-topo img {
+  margin-right: 10px;
+}
+
+.btn-topo ul li {
+  display: inline;
+  margin: 0px 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-topo ul li,
+.btn-padrao {
+  text-transform: uppercase;
+}
+
+.btn-topo a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.btn-topo a:hover {
+  color: var(--blue);
+}
+
+.btn-topo a:active,
+.btn-topo a:visited {
+    color: var(--white);
+}
+
+
+
+/* =======================
+   SLIDER
+ ======================= */  
+#carousel {
+  max-width: 1920px;
+}
+
+.slider {
+	position: relative;
+  z-index: 10;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container-slider {
+  width: 1200px;
+}
+
+.slider-content{  
+  position: absolute;
+  z-index: 30;
+  top: 22%;
+  right: 26%;
+  width: 414px;
+  height: auto;
+  color: #fff;
+  text-align: right;
+}
+
+.slider-content h3{
+  color: var(--blue);
+  text-transform: uppercase;
+}
+
+.slider-content h2,
+.slider-content p {
+  color: var(--white);
+}
+
+.slider-content h2 {
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.slider-content h3 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.slider-content sup {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+
+
+
+/* =======================
+  SETAS DO SLIDER
+ ======================= */
+.slick-arrow {
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+
+  /* estilos para ambos botões */
+  width: 100px;
+  padding: 10px;
+  border: 1px solid var(--blue);
+  color: #fff;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev {
+  left: 10px;
+}
