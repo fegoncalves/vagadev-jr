@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>N1 RUSH - Avaliação Front-end JR</title>
+  <title>N1 RUSH - Aqui você encontra os melhores jogos e preços</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
@@ -40,51 +40,112 @@
 
 
 
-    <!-- Slider -->
-    <div id="carousel" class="flex-container">
-      <div class="carousel-item">
-        <img src="img/principal_banner_desktop.jpg" alt="Banner com imaagem do jogo Mortal Kombat">
+  <!-- Slider -->
+  <div id="carousel" class="flex-container">
+    <div class="carousel-item">
+      <img src="img/principal_banner_desktop.jpg" alt="Banner com imaagem do jogo Mortal Kombat">
 
-        <div class="slider-content game-one">
-          <h2>Mortal Kombat</h2>
-          <h3>R$ 299<sup>,99</sup></h3>
-          <p>Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.</p>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="img/principal_banner_desktop_02.jpg" alt="Banner com imagem do jogo Red Dead Redemption II">
-
-        <div class="slider-content game-two">
-          <h2>Red Dead Redemption II</h2>
-          <h3>R$ 299<sup>,99</sup></h3>
-          <p>Vencedor de mais de 175 prêmios de Jogo do Ano e avaliado com mais de 250 notas máximas, Red Dead
-            Redemption 2 é uma história épica de honra e lealdade no alvorecer dos tempos modernos.</p>
-        </div>
+      <div class="slider-content game-one">
+        <h2>Mortal Kombat</h2>
+        <h3>R$ 299<sup>,99</sup></h3>
+        <p>Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores
+          podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o
+          estilo de luta.</p>
       </div>
     </div>
 
+    <div class="carousel-item">
+      <img src="img/principal_banner_desktop_02.jpg" alt="Banner com imagem do jogo Red Dead Redemption II">
+
+      <div class="slider-content game-two">
+        <h2>Red Dead Redemption II</h2>
+        <h3>R$ 299<sup>,99</sup></h3>
+        <p>Vencedor de mais de 175 prêmios de Jogo do Ano e avaliado com mais de 250 notas máximas, Red Dead
+          Redemption 2 é uma história épica de honra e lealdade no alvorecer dos tempos modernos.</p>
+      </div>
+    </div>
+  </div>
 
 
 
 
-    <!-- Dois Mini Banners -->
-    <section class="mini-banner flex-container center">
-      <div class="container">
-        <figure>
-          <img src="img/sekiro_banner.jpg" alt="Imagem do jogo Sekiro Shadows The Twice">
-          <figcaption>SEKIRO - Shadows Die Twice</figcaption>
-        </figure>
+
+  <!-- Dois Mini Banners -->
+  <section class="mini-banner flex-container center">
+    <div class="container">
+      <figure>
+        <img src="img/sekiro_banner.jpg" alt="Imagem do jogo Sekiro Shadows The Twice">
+        <figcaption>SEKIRO - Shadows Die Twice</figcaption>
+      </figure>
+    </div>
+
+    <div class="container">
+      <figure>
+        <img src="img/zelda_banner.jpg" alt="Imagem do jogo The Legend of Zelda">
+        <figcaption>The Legend of Zelda - Breath of th wild</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Produtos em Destaques -->
+  <section class="destaques">
+    <h1>
+      <img src="../svgs/group-6.svg" class="img-title" alt="Destaque feito em pontos">
+      Produtos em destaque
+    </h1>
+
+    <div class="destaques-content flex-container wrap center">
+      <div class="produto">
+        <img src="img/product-outriders.jpg" alt="Imagem do jogo Outriders">
+        <h4>Outriders</h4>
+        <p>R$ 200,00</p>
+        <a href="#comprar" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
       </div>
 
-      <div class="container">
-        <figure>
-          <img src="img/zelda_banner.jpg" alt="Imagem do jogo The Legend of Zelda">
-          <figcaption>The Legend of Zelda - Breath of th wild</figcaption>
-        </figure>
+      <div class="produto">
+        <img src="img/product-cyberpunk2077.jpg" alt="Imagem do jogo Cyberpunk">
+        <h4>CYBERPUNK 2077</h4>
+        <p>R$ 200,00</p>
+        <a href="#comprar" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
       </div>
-    </section>
 
+      <div class="produto">
+        <img src="img/product-donkey-kong-country-tropical-freeze.jpg" alt="Imagem do jogo Donkey Kong">
+        <h4>Donkey Kong Country Tropical Freeze</h4>
+        <p>R$ 200,00</p>
+        <a href="#comprar" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="comprar">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption>Pedido realizado com sucesso!
+          <div class="img-mario" alt="Personagem Mário"></div>
+        </figcaption>
+      </figure>
+  </section>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="flex-container">
+    <div class="logo-footer">
+      <img src="img/logo_header1.png" alt="Logo da Agência N1">
+    </div>
+
+    <div class="direitos-footer">
+      Agência N1 - Todos os direitos reservados
+    </div>
+  </footer>
 
   </main>
 

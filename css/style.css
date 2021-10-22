@@ -22,8 +22,14 @@ html {
   color: var(--darkblue);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 60px;
 }
 
 p { 
@@ -62,6 +68,42 @@ p {
 .item-um {
   margin: 0;
   padding: 0;
+}
+
+
+
+
+
+
+
+.btn-topo ul li,
+.btn-padrao {
+  text-transform: uppercase;
+}
+
+
+/* Botão padrão para compras */
+.btn-padrao{
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 15px 70px;
+  margin: 20px 60px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-padrao a {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.btn-padrao:hover,
+.btn-padrao:active {
+  background-color: var(--darkblue);
+}
+
+.btn-padrao:visited {
+    color: var(--white);
 }
 
 
@@ -250,4 +292,84 @@ MINI BANNER SEKIRO E ZELDA
   margin-top: -8px;
   font-size: 20px;
   font-weight: 500;
+}
+
+
+
+
+
+/* =================
+PRODUTOS EM DESTAQUE
+ =================== */
+ .destaques {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.img-title {
+  margin-right: 20px;
+}
+
+.produto {
+  width: 350px;
+  margin: 0 10px;
+  background-color: var(--silver);
+  box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.produto h4 {
+  font-size: 16px;
+  text-align: left;
+  height: 55px;
+  padding: 10px 50px;
+}
+
+.produto p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding: 10px 50px;
+}
+
+.produto img {
+  margin: 0;
+}
+
+figcaption {
+  border-top: 1px solid var(--blue);
+  background-color: var(--silver);
+}
+
+
+
+
+
+
+
+/* =================
+  FOOTER
+ =================== */
+footer {
+  display: flex;
+}
+
+.logo-footer {
+  width: 547px;
+  padding: 10px 20px 0px;
+  background-color: var(--darkblue);
+  text-align: right;
+}
+
+.logo-footer img {
+  width: auto;
+  height: 28px;
+}
+
+.direitos-footer {
+  width: 1373px;
+  padding: 10px 20px 0px;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: left;
 }
