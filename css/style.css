@@ -131,9 +131,11 @@ p {
   position: absolute;
   z-index: 30;
   top: 22%;
-  width: 414px;
   height: auto;
-  color: #fff;
+  color: #fff;  
+  width: 500px;
+  background-color: rgba(8,65,84,.82);
+  padding: 20px 30px 30px;
 }
 
 .game-one{ 
