@@ -65,10 +65,6 @@ p {
   margin: 0;
   padding: 0;
 }
-.item-um {
-  margin: 0;
-  padding: 0;
-}
 
 
 
@@ -108,61 +104,6 @@ p {
 
 
 
-/* =======================
-   HEADER E NAV
- ======================= */  
-header {
-  position: absolute;
-  z-index: 50;
-  top: 30px;
-  left: 0;
-  right: 0;
-  max-width: 1200px;
-  width: 100%; 
-  margin: 0 auto;
-  color: #fff;
-}
-
-.logo {
-  width: 163px;
-  height: auto;
-  padding-left: 40px;
-}
-
-nav {
-  padding: 20px;
-}
-
-.btn-topo img {
-  margin-right: 10px;
-}
-
-.btn-topo ul li {
-  display: inline;
-  margin: 0px 30px;
-  font-weight: 500;
-}
-
-.btn-topo ul li,
-.btn-padrao {
-  text-transform: uppercase;
-}
-
-.btn-topo a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.btn-topo a:hover {
-  color: var(--blue);
-}
-
-.btn-topo a:active,
-.btn-topo a:visited {
-    color: var(--white);
-}
-
-
 
 /* =======================
    SLIDER
@@ -186,10 +127,6 @@ nav {
   object-fit: cover;
 }
 
-.container-slider {
-  width: 1200px;
-}
-
 .slider-content { 
   position: absolute;
   z-index: 30;
@@ -198,12 +135,14 @@ nav {
   height: auto;
   color: #fff;
 }
+
 .game-one{ 
-  right: 26%;
+  right: 22%;
   text-align: right;
 }
+
 .game-two {
-  left: 26%;
+  left: 22%;
   text-align: left;
 }
 
@@ -248,7 +187,7 @@ nav {
   transform: translate3d(0, -50%, 0);
 
   /* estilos para ambos botões */
-  width: 100px;
+  width: 50px;
   padding: 10px;
   border: 1px solid var(--blue);
   color: #fff;
@@ -341,6 +280,75 @@ figcaption {
   background-color: var(--silver);
 }
 
+/* Lightbox */
+.lightbox {
+  display: none;
+}
+
+.lightbox.active {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 2%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox figcaption {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  width: 25rem;
+  position: relative;
+  z-index: 500;
+  padding: 60px;
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+  background-image: url(../img/image-6.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.lightbox .close {
+  position: relative;
+  top: -18px;
+  right: 12px;
+  z-index: 500;
+  display: block;
+}
+
+.lightbox .close::after {
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  content: "×";
+  cursor: pointer;
+}
+
+.lightbox .close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(8,65,84,.62);
+  content: "";
+  cursor: default;
+}
 
 
 
@@ -350,8 +358,10 @@ figcaption {
 /* =================
   FOOTER
  =================== */
-footer {
-  display: flex;
+
+ footer {
+  max-width: 1920px;
+  width: 100%; 
 }
 
 .logo-footer {

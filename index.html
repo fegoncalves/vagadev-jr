@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>N1 RUSH - Aqui você encontra os melhores jogos e preços</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/modal-menu.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 </head>
@@ -15,26 +18,90 @@
 <body>
 
 
-  <header class="flex-container between items-center">
-    <!-- Menu de navegação -->
-    <nav class="nav">
-      <div class="menu-topo flex-container center content-center">
-        <div class="menu-principal">
-          <img src="svgs/icon_hamburguer.svg" alt="Ícone hamburguer do menu">
-        </div>
-        <div class="logo">
-          <img src="img/Logo_N1_Rush.png" alt="Logo da Agência N1">
-        </div>
-      </div>
-    </nav>
+  <!-- Header -->  
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <button class="menu-hamburger">
+          <img class="hamburger-icon" src="svgs/icon_hamburguer.svg" alt="Menu" />
+        </button>
 
-    <div class="btn-topo center">
-      <ul>
-        <li><a href="#"><img src="svgs/paper-plane.svg" alt="ícone de uma seta">Contato</li></a>
-        <li><a href="#"><img src="svgs/search-solid.svg" alt="ícone de uma lupa">Buscar</li></a>
-        <li><a href="#"><img src="svgs/shopping-bag-solid.svg" alt="ícone de sacola de compras"></li></a>
+        <div class="modal-menu">
+          <div class="modal-genre-container genre-fight">
+            <header class="modal-genre-title">Luta</header>
+            <ul class="modal-game-list">
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">Mortal Kombat</a>
+              </li>
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">Smash Bros</a>
+              </li>
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">Killer Instict</a>
+              </li>
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">DBZ Kakarot</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal-genre-container genre-adventure">
+            <header class="modal-genre-title">Ação / Aventura</header>
+            <ul class="modal-game-list">
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">GTA V</a>
+              </li>
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">Tomb Raider</a>
+              </li>
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">HALO</a>
+              </li>
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">Call of Duty</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal-genre-container genre-car">
+            <header class="modal-genre-title">Corrida</header>
+            <ul class="modal-game-list">
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">Need For Speed</a>
+              </li>
+              <li class="modal-game-item">
+                <a href="" class="modal-game-title">Forza Horizon</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#">
+          <img class="logo" src="img/Logo_N1_Rush.png" alt="Logo da Agência N1" />
+        </a>
+      </div>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link nav-contact" href="">
+            <img class="nav-icon paper-plane" src="svgs/paper-plane.svg" alt="ícone de seta">
+            <span class="nav-text">Contato</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <img class="nav-icon" src="svgs/search-solid.svg" alt="ícone de lupa">
+            <span class="nav-text">Buscar</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <img class="nav-icon" src="svgs/shopping-bag-solid.svg" alt="ícone de sacola">
+            <span class="bag-amount">0</span>
+          </a>
+        </li>
       </ul>
-    </div>
+    </nav>
   </header>
 
 
@@ -71,7 +138,7 @@
 
 
   <!-- Dois Mini Banners -->
-  <section class="mini-banner flex-container center">
+  <section class="mini-banner flex-container wrap center">
     <div class="container">
       <figure>
         <img src="img/sekiro_banner.jpg" alt="Imagem do jogo Sekiro Shadows The Twice">
@@ -91,7 +158,6 @@
 
 
 
-  <!-- Produtos em Destaques -->
   <section class="destaques">
     <h1>
       <img src="../svgs/group-6.svg" class="img-title" alt="Destaque feito em pontos">
@@ -103,21 +169,21 @@
         <img src="img/product-outriders.jpg" alt="Imagem do jogo Outriders">
         <h4>Outriders</h4>
         <p>R$ 200,00</p>
-        <a href="#comprar" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
+        <a href="#" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
       </div>
 
       <div class="produto">
         <img src="img/product-cyberpunk2077.jpg" alt="Imagem do jogo Cyberpunk">
         <h4>CYBERPUNK 2077</h4>
         <p>R$ 200,00</p>
-        <a href="#comprar" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
+        <a href="#" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
       </div>
 
       <div class="produto">
         <img src="img/product-donkey-kong-country-tropical-freeze.jpg" alt="Imagem do jogo Donkey Kong">
         <h4>Donkey Kong Country Tropical Freeze</h4>
         <p>R$ 200,00</p>
-        <a href="#comprar" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
+        <a href="#" class="btn-padrao button flex-container lightbox-trigger">Comprar</a>
       </div>
     </div>
 
@@ -160,8 +226,8 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  <!-- Script externo do slider -->
-  <script src="js/slider.js"></script>
+  <!-- Script do slider -->
+  <script src="js/script.js"></script>
 
 
 </body>
